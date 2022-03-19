@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+    <title>
+        My Responsive Design
+    </title>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .row::after {
+                content: "";
+                clear: both;
+                display: block;
+            }
+            
+            [class*="col-"]{
+                float: left;
+                padding: 15px;
+            }
+        
+            .header{
+                text-align: center;
+                background-color: #333;
+                height: 200px;
+                padding-bottom: 15px;
+            }
+
+            .menu ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 15px;
+            }
+            
+            .menu li {
+                padding: 8px;
+                margin-bottom: 7px;
+                background-color: #666;
+                color: white;
+                box-shadow: 0 1px 3 px rgba(0,0,0,0,12), 0 1px 2px rgba(0,0,0,0,24);
+            }
+
+            .menu li:hover {
+                background-color: aquamarine;
+            }
+
+            .footer {
+            
+               color: #fff;
+               text-align: center;
+               font-size: small;
+               
+            }
+
+           .footer img {
+               height: 30px;
+               border: none;
+            }
+
+            h1 {
+                color: white;
+                padding: 100px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: xx-large;
+            }
+            
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 100%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+
+            @media only screen and (max-width: 768px){
+                [class*="col-"] {
+                    width: 100%;
+                }
+            }
+            
+            @media only screen and (max-width: 600){
+                body {
+                    background-color: lightblue;
+                }
+            }
+
+            img {
+                height: 250px;
+                border-radius: 50%;
+                border: 5px solid #999;
+                display: block;
+                margin: auto;
+            }
+
+            html {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            h2 {
+                text-align: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            .col-6 p {
+                padding: 50px;
+                font-size: large;
+                text-align: center;
+            }
+
+            .col-6 hr {
+                width: 250px;
+                border-top: 4px solid #666;
+            }
+           
+
+          
+           
+
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>KABINGAH</h1>
+        </div>
+        <div class="row">
+            <div class="col-3 menu">
+                <ul>
+                    <li>Chicken Snack</li>
+                    <li>Potato Snack</li>
+                    <li>Spicy Snack</li>
+                    <li>Robusta Coffee</li>
+                    <li>Arabica Coffee</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <img src="img/Chicken.png">
+            <h2>Chicken Snack</h2>
+            <hr>
+            <p>Chicken Snack ini merupakan produk cemilan ala rumahan yang tentu saja berbahan dasar ayam. Cemilan ala rumahan ini memiliki berbagai rasa loh, seperti rasa original, balado/pedas, manis, dan asin.</p>
+
+            <img src="img/Potato.webp">
+            <h2>Potato Snack</h2>
+            <hr>
+            <p>Chitato adalah cemilan yang berbahan dasar kentang. Chitato memiliki banyak varian rasa seperti Sapi Panggang, Ayam Bumbu, Rasa Asi/Original, Rasa Keju Supreme, Rasa Sapi Bumbu Bakar, Rasa Ayam Barbekiu. Cukup banyak varian rasanya bukan? selain itu harga makanan ringan ini lumayan terjangkau untuk Chitato versi jumbo cuman Rp 18.000 an.</p>
+
+            <img src="img/Spicy.jpg">
+            <h2>Spicy Snack</h2>
+            <hr>
+            <p>hayoo siapa yang demen banget sama cemilan yang pedes nih, kali ini mimin saranin cobain deh basreng atau baso goreng ala Dapur Bunda. Harga cemilan ini pun cukup murah meriah lo gengs, hanya dibanderol dengan harga 12.000 rupiah/100 gram. Cemilan ini pun beragam rasanya loh, ada rasa pedas manis, pedas asin, sedang asin, sedang manis, dan rasa original.</p>
+
+            <img src="img/Kopi.jpg">
+            <h2>Robusta Coffee</h2>
+            <hr>
+            <p>Para pencinta kopi pasti udah tau kalau terdapat berbagai jenis kopi yang dijual di pasaran. Ada kopi yang dibagi sesuai takarannya, cara penyeduhannya, dan juga rasanya. Tapi, kayaknya kamu juga perlu tau variasi yang paling mendasar banget, yaitu berdasarkan jenis kopinya. kali ini mimin bawain produk kopi jenis Robusta nih, bagi penikmat robusta ayo tunggu apalagi segera pesan dan rasakan karakter khas Robusta terbaik di Indonesia. Produk ini ditawarkan dengan harga kopi bubuk robusta murah yaitu Rp 52.000 saja untuk kemasan 200g.</p>
+
+            <img src="img/Kopi2.jpg">
+            <h2>Arabica Coffee</h2>
+            <hr>
+            <p>Dibandingkan dengan berbagai jenis kopi lainnya, kopi arabika termasuk kopi yang memiliki nilai tertinggi di seluruh dunia. Hal ini disebabkan oleh cita rasa berbeda yang dihasilkan oleh setiap varietasnya sehingga para pencinta kopi punya banyak pilihan rasa.
+
+            Selain cita rasa yang khas dari kopi arabika berupa kekentalan (body) yang ringan dan tingkat keasaman yang lebih tinggi dibandingkan kopi yang lainya, kopi arabika juga memiliki profil aroma yang sangat unik, di antaranya ada yang memiliki aroma khas menyerupai lemon (lemony), aroma menyerupai madu (honeyed) dan bahkan aroma khas menyerupai cokelat (chocolaty). Aroma yang khas pada hasil seduhan memang dapat memberikan nilai tambah terhadap produk cita rasa kopi Arabika yang dihasilkan. Tunggu apa lagi ayo buat produk kopi berkualitas dunia ini ada di rumahmu. Kopi bubuk ini dibanderol dengan harga mulai dari Rp 180.000/1 Kg.</p>
+        </div>
+
+        <div class="footer" style="border: #333; width: 1080;">
+            <hr>
+            <h3><i>contact person :</i></h3>
+            <h3><img src="img/instagram-logo.png" height="20px"><a href="https://www.instagram.com/4yudha/"> <i>@4yudha</i></a></h3>
+            <h3><img src="img/facebook-logo.png" height="16px"><a href="https://www.facebook.com/profile.php?id=100004942216527"> <i>Andhika Yudha Prawira</i></a></h3>   
+           
+        </div>
+    </body>
+</html>

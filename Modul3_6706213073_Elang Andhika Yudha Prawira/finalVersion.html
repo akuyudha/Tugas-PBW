@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>MyCity</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .row::after {
+                content: "";
+                clear: both;
+                display: block;
+            }
+            
+            [class*="col-"]{
+                float: left;
+                padding: 15px;
+            }
+
+            html {
+                font-family: 'Lucida Sans', sans-serif;
+            }
+
+            .header{
+                background-color: #9933cc;
+                color: white;
+                padding: 15px;
+            }
+
+            .menu ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0px;
+            }
+            
+            .menu li {
+                padding: 8px;
+                margin-bottom: 7px;
+                background-color: aquamarine;
+                color: rgb(71, 70, 70);
+                box-shadow: 0 1px 3 px rgba(0,0,0,0,12), 0 1px 2px rgba(0,0,0,0,24);
+            }
+
+            .menu li:hover {
+                background-color: #09c;
+            }
+
+            .side {
+                background-color: #33b533;
+                padding: 15px;
+                color: white;
+                text-align: center;
+                font-size: 15px;
+                box-shadow: 0 1px 3px rgba(0,0,0,0,12), o 1px 2px rgba(0,0,0,0,24);
+            }
+
+            .footer{
+                background-color: #09c;
+                color: white;
+                text-align: center;
+                font-size: 12px;
+                padding: 15px;
+            }
+
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+
+            @media only screen and (max-width: 768px){
+                [class*="col-"] {
+                    width: 100%;
+                }
+            }
+            
+            @media only screen and (max-width: 600){
+                body {
+                    background-color: lightblue;
+                }
+            }
+
+            img {
+                height: 300px;
+            }
+
+            hr {
+                width: 600px;
+                border-top: 5px solid #666;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Indramayu</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-3 menu">
+                <ul>
+                    <li>Kota</li>
+                    <li>Makanan</li>
+                    <li>Wisata</li>
+                    <li>Budaya</li>
+                </ul>
+            </div>
+
+            <div class="col-6">
+                <h1>Kota mangga</h1>
+                <p>Indramayu atau biasa orang menyebutnya kota mangga, merupakan sebuah kabupaten yang berada di ujung utara provinsi Jawa Barat. Indramayu bisa disebut kota mangga karena jumlah pohon mangga tak terhitung jumlahnya, selain itu juga memiliki berbagai jenis mangga yang tertanam di dalamnya.</p>
+
+                <img src="img/Imy.jpg">
+
+                <br>
+                <br>
+                <hr>
+
+                <p>Indramayu juga memiliki banyak makanan khas daerah antara lain: </p>
+                <h3><b>1. Rumbah</b></h3>
+                <img src="img/rumbah.jpg">
+                <h3><b>2. Geblog</b></h3>
+                <img src="img/geblog.jpg">
+                <h3><b>3. Pedesan Entog</b></h3>
+                <img src="img/pedesan.png">
+                <h3><b>4. Blengep Cotot</b></h3>
+                <img src="img/blengep.jpg">
+                <br>
+                <br>
+
+                <hr>
+                <br>
+                <p>Gambar di atas adalah beberapa makanan khas kabupaten Indramayu. Selain memiliki banyak makanan khas indramayu juga memiliki banyak tempat wisata pantai seperti Pantai Karangsong, Pantai Tirtamaya, Pantai Indah Balongan, Pantai Glayem, pantai baro, Pantai Laut Biru, dan masih ada beberapa tempat wisata pantai lainnya. Indramayu juga memilki tempat wisata kuliner yaitu Kulcim (Kuliner Cimanuk(Tjimanoek)).</p>
+                <br>
+
+                <hr>
+                <br>
+                <p>Budaya yang dimiliki indramayu pun banyak, dimulai dari budaya tei yaitu Tari Topeng, Sintren, tarling, Genjring Akrobat, dan lain sebagainya. Selain tari, Indramayu memiliki bermacam tradisi dimulai dari Mapag Sri, Ngarot, Ngunjung, dan yang pasti karena Indramayu merupakan daerah pesisir maka tradisi Nadran.</p>
+            </div>
+
+            <div class="col-3 right">
+                <div class="side">
+                    <h2>What?</h2>
+                    <p>Indrramayu adalah nama kabupaten</p>
+                    <h2>di mana?</h2>
+                    <p>Kabupaten Indramayu terletak di ujung utara provinsi Jawa Barat.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Sekian dari saya, Terima Kasih...</p>
+        </div>
+    </body>
+    </body>
+</html>
